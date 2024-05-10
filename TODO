@@ -1,0 +1,2 @@
+- add unit test and integration tests
+- add try catch to handle errors in API calls (RTKQuery)

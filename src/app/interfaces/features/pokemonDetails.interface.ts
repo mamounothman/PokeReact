@@ -1,0 +1,3 @@
+interface PokemonDetailsProps {
+    pokemon: PokemonDetailsData;
+}
