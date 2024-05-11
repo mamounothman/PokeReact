@@ -13,26 +13,26 @@ function PokemonDetails( {pokemon} : PokemonDetailsData) {
                         <li className="list-item p-item">
                             <div className="d-flex justify-content">
                                 <label>Name </label>
-                                <div>{pokemon.name}</div>
+                                <div className="name">{pokemon.name}</div>
                             </div>
                         </li>
                         <li className="list-item p-item">
                             <div className="d-flex justify-content">
                                 <label>Height</label>
-                                <div>{pokemon.height * 10} cm</div>
+                                <div className="height">{pokemon.height * 10} cm</div>
                             </div>
                         </li>
                         <li className="list-item p-item">
                             <div className="d-flex justify-content">
                                 <label>Weight</label>
-                                <div>{pokemon.weight * 0.1 } kg</div>
+                                <div className="weight">{pokemon.weight * 0.1 } kg</div>
                             </div>
                             
                         </li>
                         <li className="list-item p-item">
                             <div className="d-flex justify-content">
                                 <label>Types</label>
-                                <div>{pokemon.types.map((item) => item.type.name + " ")}</div>
+                                <div className="types">{pokemon.types.map((item) => item.type.name + " ")}</div>
                             </div>
                         </li>
                     </ul>

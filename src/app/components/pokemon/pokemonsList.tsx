@@ -14,10 +14,9 @@ function PokemonsList({ onPokemonSelected }: onPokemonSelectedProps) {
             </header>
             <main>
                 <article>
-                    
                     <ul className="list">
                         {data.map((pokemon) => (
-                            <li key={pokemon.name} className="list-item" onClick={() => onPokemonSelected(pokemon)}>
+                            <li role="listitem" key={pokemon.name} className="list-item" onClick={() => onPokemonSelected(pokemon)}>
                                 <div className="d-flex justify-content">
                                     <div>
                                         <img src={pokemon.sprites.front_default} alt={pokemon.name} />
