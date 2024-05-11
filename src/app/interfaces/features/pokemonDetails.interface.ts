@@ -1,3 +1,3 @@
 interface PokemonDetailsProps {
-    pokemon: PokemonDetailsData;
+  pokemon: PokemonDetailsData;
 }

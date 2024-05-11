@@ -1,3 +1,3 @@
 interface onPokemonSelectedProps {
-    onPokemonSelected: (pokemon: PokemonDetailsData) => void;
+  onPokemonSelected: (pokemon: PokemonDetailsData) => void;
 }
