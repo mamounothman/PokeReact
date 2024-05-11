@@ -5,19 +5,19 @@ export const apiSlice = createApi({
         baseUrl: import.meta.env.VITE_API_URL
     }),
     endpoints: (builder) => ({
-        // pokemonsList: builder.query<PokemonlistingData, void>({
-        //     query() {
-        //         return {
-        //             url:"pokemon",
-        //             params: {
-        //                 limit:10
-        //             }
-        //         };
-        //     }
-        // }),
-        // pokemonDetail: builder.query<PokemonDetailsData, {name: string}>({
-        //     query: ({name}) => `pokemon/${name}` 
-        // }),
+        pokemonsList: builder.query<PokemonlistingData, void>({
+            query() {
+                return {
+                    url:"pokemon",
+                    params: {
+                        limit:10
+                    }
+                };
+            }
+        }),
+        pokemonDetail: builder.query<PokemonDetailsData, {name: string}>({
+            query: ({name}) => `pokemon/${name}` 
+        }),
         pokemonsListWithDetails: builder.query<Array<PokemonDetailsData>, void>({
             async queryFn() {
                 try {
